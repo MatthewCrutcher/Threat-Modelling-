@@ -1,0 +1,31 @@
+{
+  "version": "2.6.0",
+  "summary": {
+    "title": "Capstone Web Application",
+    "owner": "Matthew ",
+    "description": "Web application allowing UCs to upload projects and store in the database for students to apply to and progress through rounds and then allocate to teams in the final round. ",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [
+      {
+        "name": "Matthew"
+      }
+    ],
+    "diagrams": [
+      {
+        "id": 0,
+        "title": "Capstone Application STRIDE Diagram",
+        "diagramType": "STRIDE",
+        "placeholder": "New STRIDE diagram description",
+        "thumbnail": "./public/content/images/thumbnail.stride.jpg",
+        "version": "2.6.0",
+        "cells": [],
+        "description": ""
+      }
+    ],
+    "diagramTop": 1,
+    "reviewer": "Matthew ",
+    "threatTop": 0
+  }
+}
