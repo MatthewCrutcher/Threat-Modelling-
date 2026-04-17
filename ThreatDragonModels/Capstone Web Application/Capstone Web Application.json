@@ -370,124 +370,10 @@
               "hasOpenThreats": false,
               "providesAuthentication": false,
               "threats": []
-            }
-          },
-          {
-            "position": {
-              "x": 1413.75,
-              "y": 410
             },
-            "size": {
-              "width": 112.5,
-              "height": 60
-            },
-            "attrs": {
-              "text": {
-                "text": "CSV Source"
-              },
-              "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
-                "strokeDasharray": null
-              }
-            },
-            "visible": true,
-            "shape": "actor",
-            "zIndex": 4,
-            "ports": {
-              "groups": {
-                "top": {
-                  "position": "top",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "right": {
-                  "position": "right",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "bottom": {
-                  "position": "bottom",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                },
-                "left": {
-                  "position": "left",
-                  "attrs": {
-                    "circle": {
-                      "r": 4,
-                      "magnet": true,
-                      "stroke": "#5F95FF",
-                      "strokeWidth": 1,
-                      "fill": "#fff",
-                      "style": {
-                        "visibility": "hidden"
-                      }
-                    }
-                  }
-                }
-              },
-              "items": [
-                {
-                  "group": "top",
-                  "id": "b1312a53-c2f6-4e09-bc8e-29993b85532d"
-                },
-                {
-                  "group": "right",
-                  "id": "0f6895fc-9f28-431a-9654-da91f2a51837"
-                },
-                {
-                  "group": "bottom",
-                  "id": "860dc304-ffbc-4500-9e9a-a5a7961dc0f0"
-                },
-                {
-                  "group": "left",
-                  "id": "d58ed63a-8765-46b0-921c-108d99b456a5"
-                }
-              ]
-            },
-            "id": "79ac76af-ccb1-4475-a1e9-ebdd4eec7107",
-            "data": {
-              "type": "tm.Actor",
-              "name": "CSV Source",
-              "description": "",
-              "isTrustBoundary": false,
-              "outOfScope": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "providesAuthentication": false,
-              "threats": []
-            }
+            "children": [
+              "818cb8ce-fe36-4111-a93b-8eb1a479b50b"
+            ]
           },
           {
             "position": {
@@ -1303,8 +1189,8 @@
               "y": 400
             },
             "target": {
-              "x": 310,
-              "y": 320
+              "cell": "3af79c29-0d91-4dd3-8fb4-9e2021b4fcec",
+              "port": "860dc304-ffbc-4500-9e9a-a5a7961dc0f0"
             }
           },
           {
@@ -1327,7 +1213,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Data Flow",
+              "name": "Email Requests ",
               "description": "",
               "outOfScope": false,
               "isTrustBoundary": false,
@@ -1341,7 +1227,7 @@
               "trustBoundaryIds": []
             },
             "labels": [
-              "Data Flow"
+              "Email Requests "
             ],
             "id": "c44662b8-ce7c-4d7f-b670-16d85802ce77",
             "source": {
@@ -1351,7 +1237,70 @@
             "target": {
               "cell": "8bb06414-6fb9-4e39-901c-9e68365fc772",
               "port": "860dc304-ffbc-4500-9e9a-a5a7961dc0f0"
-            }
+            },
+            "vertices": [
+              {
+                "x": 1210,
+                "y": 420
+              },
+              {
+                "x": 1300,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email Notifications",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Email Notifications"
+            ],
+            "id": "818cb8ce-fe36-4111-a93b-8eb1a479b50b",
+            "source": {
+              "cell": "8bb06414-6fb9-4e39-901c-9e68365fc772",
+              "port": "d58ed63a-8765-46b0-921c-108d99b456a5"
+            },
+            "target": {
+              "cell": "2de2db1c-f2be-43f0-8117-7fa054e37595",
+              "port": "b1312a53-c2f6-4e09-bc8e-29993b85532d"
+            },
+            "vertices": [
+              {
+                "x": 820,
+                "y": -20
+              }
+            ],
+            "parent": "8bb06414-6fb9-4e39-901c-9e68365fc772"
           }
         ],
         "description": ""
