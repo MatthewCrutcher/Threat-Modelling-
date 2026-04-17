@@ -1301,6 +1301,30 @@
               }
             ],
             "parent": "8bb06414-6fb9-4e39-901c-9e68365fc772"
+          },
+          {
+            "position": {
+              "x": 620,
+              "y": 65
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "S, T"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "75763d1e-b245-43e4-9a3a-7dff9f63d0b0",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Text",
+              "name": "S, T",
+              "hasOpenThreats": false
+            }
           }
         ],
         "description": ""
