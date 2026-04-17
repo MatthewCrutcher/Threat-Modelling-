@@ -257,8 +257,8 @@
           },
           {
             "position": {
-              "x": 1107.5,
-              "y": 470
+              "x": 1160,
+              "y": 20
             },
             "size": {
               "width": 112.5,
@@ -1158,7 +1158,7 @@
             },
             "vertices": [
               {
-                "x": 1090,
+                "x": 1030,
                 "y": 300
               }
             ]
@@ -1303,7 +1303,53 @@
               "y": 400
             },
             "target": {
-              "cell": "3af79c29-0d91-4dd3-8fb4-9e2021b4fcec",
+              "x": 310,
+              "y": 320
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "c44662b8-ce7c-4d7f-b670-16d85802ce77",
+            "source": {
+              "x": 880,
+              "y": 380
+            },
+            "target": {
+              "cell": "8bb06414-6fb9-4e39-901c-9e68365fc772",
               "port": "860dc304-ffbc-4500-9e9a-a5a7961dc0f0"
             }
           }
